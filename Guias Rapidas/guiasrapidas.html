@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name author="Nicolas Ayala Rosas">
+    <title>Intranet Addinteli</title>
+    <link rel="stylesheet" href="style_guiasrapidas.css">
+</head>
+
+<body>
+    <header>
+        <img src="../Imagenes_y_Archivos/Logo Addinteli 2.png" alt="Logo Addinteli" class="logo">
+        <nav>
+            <ul id="barradenavegacion">
+                <li><a href="../Pagina Principal/index.html">Inicio</a></li>
+                <li><a href="../Glosario/glosario.html">Glosario</a></li>
+                <li><a href="../Documentos/documentos.html">Manuales</a></li>
+                <li><a href="../Procesos/procesos.html">Procesos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="video-list">
+            <p class="intro-text"><mark>Da click en cada uno de los elementos de la lista para que se muestre el video correspondiente.</mark></p>
+            <ul class="steps-list">
+                <li class="step-item" data-video="jrFbcYfSapM" data-title="Compatibilidad IMEI Altán Redes">
+                    <span class="step-title">1.- Verifica la compatibilidad con tu equipo</span>
+                </li>
+                <li class="step-item" data-video="F6y-nBNPyHY" data-title="Tutorial Configurar tu APN">
+                    <span class="step-title">2.- ¿Cómo cambiar el APN de manera manual?</span>
+                </li>
+                <li class="step-item" data-video="OLavU0tFsv4" data-title="Tutorial Forzado Red">
+                    <span class="step-title">3.- Configura tu dispositivo a la Red de ALTÁN</span>
+                </li>
+                <li class="step-item" data-video="CjlZwE02V84" data-title="Tutorial VOLTE para llamadas">
+                    <span class="step-title">4.- Configura VOLTE para realizar llamadas</span>
+                </li>
+                <li class="step-item" data-video="VeQixpYAcoE" data-title="Contraseña Genérica de Buzón de Voz">
+                    <span class="step-title">5.- Contraseña genérica del buzón de voz</span>
+                </li>
+                <li class="step-item" data-video="SuZuoqrRxAE" data-title="Portabilidad Altán Redes">
+                    <span class="step-title">6.- Portabilidad</span>
+                </li>
+                <li class="step-item" data-video="C4MnIrJWhpY" data-title="Política de Uso Justo Altán Redes">
+                    <span class="step-title">7.- Políticas de uso justo</span>
+                </li>
+                <li class="step-item" data-video="j6Q3bkQ2q2U" data-title="IMEI por código QR">
+                    <span class="step-title">8.- Check IMEI por código QR</span>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <script>
+        document.querySelectorAll('.step-item').forEach(item => {
+            item.addEventListener('click', function() {
+                const videoID = item.getAttribute('data-video'); 
+                const videoTitle = item.getAttribute('data-title');
+
+                let existingVideo = item.querySelector('iframe');
+
+                if (existingVideo) {
+                    existingVideo.style.display = existingVideo.style.display === 'none' ? 'block' : 'none';
+                } else {
+                    const iframe = document.createElement('iframe');
+                    iframe.width = '922';
+                    iframe.height = '462';
+                    iframe.src = `https://www.youtube.com/embed/${videoID}`;
+                    iframe.title = videoTitle;
+                    iframe.frameborder = '0';
+                    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+                    iframe.referrerpolicy = 'strict-origin-when-cross-origin';
+                    iframe.allowfullscreen = true;
+                    item.appendChild(iframe);
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

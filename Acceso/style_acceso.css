@@ -1,0 +1,81 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url('../Imagenes_y_Archivos/FondodepantallaP2.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: rgba(14, 24, 84, 0.848);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-signin h1 {
+  color: white;
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+
+.form-signin input[type="email"],
+.form-signin input[type="password"] {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.form-signin label {
+  color: white;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+  display: block;
+  text-align: left;
+}
+
+.form-signin button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2440e0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-signin button:hover {
+  background-color: #122070;
+}
+
+.form-signin .checkbox {
+  color: white;
+  font-size: 0.9em;
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.form-signin .footer-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.8em;
+  margin-top: 20px;
+}
+
+.form-signin img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
