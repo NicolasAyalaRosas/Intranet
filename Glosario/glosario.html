@@ -99,7 +99,7 @@
                     <li>Tiene mayor alcance de cobertura, por lo cual es habitual encontrarla en zonas rurales.</li>
                     <li>Se utiliza para complementar la cobertura en zonas urbanas.</li>
                 </ul>
-                <p>Dónde se utiliza Corea del Sur, China, Australia, México, Japón.</p>
+                Dónde se utiliza Corea del Sur, China, Australia, México, Japón.
                 <ul>    
                     <strong>Características de la banda 28.</strong>
                     <li>La banda 28 complementa la banda 4 AWS (1700 y 2100 MHz) de la red 4G.</li>
@@ -327,7 +327,7 @@
                     <li>Ayudar a los dispositivos a identificarse cuando se conectan a redes.</li>
                     <li>Recuperar o actualizar información en tarjetas SIM por aire.</li>
                 </ul>
-                <p>El ICCID es uno de los identificadores que utilizan las redes extranjeras para determinar la red local del dispositivo. Esto permite que el usuario pueda realizar llamadas, enviar mensajes de texto y utilizar datos mientras está en el extranjero.</p>
+                El ICCID es uno de los identificadores que utilizan las redes extranjeras para determinar la red local del dispositivo. Esto permite que el usuario pueda realizar llamadas, enviar mensajes de texto y utilizar datos mientras está en el extranjero.
             </dd>
     
             <dt>IMSI - International Mobile Subscriber Identity</dt>
@@ -454,23 +454,102 @@
                 <li>Gestiona las llamadas que las empresas hacen desde otras ciudades</li>
             </ul>
             <strong>Diferencia entre HLR y VLR</strong>
-            <p>El HLR (Registro de Ubicación Doméstica) es una base de datos permanente que almacena información de todos los suscriptores de una red. El VLR es una base de datos temporal que almacena información de los abonados que se desplazan fuera de sus redes domésticas.</p>
+            El HLR (Registro de Ubicación Doméstica) es una base de datos permanente que almacena información de todos los suscriptores de una red. El VLR es una base de datos temporal que almacena información de los abonados que se desplazan fuera de sus redes domésticas.
             </dd>
 
             <dt>HLR - Home Location Register</dt>
-            <dd>También conocida como Registro de Localización de Usuarios, es una base de datos que contiene información sobre los clientes de una red móvil, como sus números de teléfono, derechos de servicio e historial de portabilidad.<br><br>Te permite saber si existe un número de móvil, a qué operador de telecomunicaciones corresponde y si está conectado al suscriptor adecuado.</dd>
+            <dd>El Home Location Register (HLR) es una base de datos que contiene información sobre los abonados a un servicio de telefonía móvil. También se le conoce como Registro de Localización de Abonados. <br><br>
+                El HLR contiene los siguientes datos de los clientes: Número de teléfono, Derecho a servicio, Historial de portabilidad de números, Información administrativa, Datos de localización. <br><br>
+                El HLR se utiliza para gestionar los abonados en redes 2G y 3G. También se utiliza en iniciativas de IoT para garantizar que solo los usuarios y dispositivos autentificados y autorizados puedan acceder a los servicios. <br><br>
+                El HLR se comunica con otros elementos de la red a través del protocolo Parte de aplicación móvil (MAPA). Este protocolo forma parte del Sistema de Señalización 7 (RSV) estándar. 
+            </dd>
 
-            <dt>Mobile Country Code - MCC</dt>
-            <dd>Es un código numérico de tres dígitos que identifica el país de origen de un número de teléfono. Se utiliza para identificar las redes GSM.<br>El MCC se usa junto con el código de red móvil (MNC) y la identidad internacional del abonado móvil (IMSI). Esta combinación de códigos permite identificar a un operador de red móvil y a un número de teléfono concreto.<br>El MCC tiene varias aplicaciones, entre ellas: Gestión de la itinerancia, Localización de la red, Identificación de la región geográfica de un abonado móvil.</dd>
+            <dt>MCC - Mobile Country Code</dt>
+            <dd>El MCC, o Mobile Country Code (Código de País Móvil), es un código de tres dígitos que identifica el país de origen de un número de teléfono. Se utiliza junto con el MNC (Mobile Network Code) para identificar una red móvil.
+                <ul>
+                    <strong>Características del MCC</strong>
+                    <li>El primer dígito del MCC indica la región geográfica del proveedor de servicios GSM.</li>
+                    <li>Los dígitos 1 y 8 no se utilizan.</li>
+                    <li>La distribución geográfica del primer dígito es:
+                        <ul>
+                            <li>0: redes de prueba</li>
+                            <li>2: Europa</li>
+                            <li>3: América del Norte y el Caribe</li>
+                            <li>4: Asia y Oriente Medio</li>
+                            <li>5: Australia y Oceania</li>
+                            <li>6: África</li>
+                            <li>7: Centro y Sudamérica</li>
+                            <li>9: Mundo</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <strong>Usos del MCC</strong>
+                    <li>Se utiliza junto con el MNC y el MSIN para formar parte del IMSI y del LAI.</li>
+                    <li>Se utiliza en combinación con el código de red móvil (MNC) para identificar un operador de red móvil.</li>
+                    <li>Permite que los dispositivos móviles se conecten al proveedor de red correcto.</li>
+                    <li>Garantiza una facturación y una prestación de servicios precisas.</li>
+                </ul>
+            </dd>
 
-            <dt>Mobile Network Code - MNC</dt>
-            <dd>El código de red móvil (MNC) es un número de dos o tres dígitos que identifica a una red móvil terrestre pública (PLMN). El MNC es asignado por el regulador nacional.<br>El MNC se utiliza en combinación con el código de país móvil (MCC) para identificar a un operador de telefonía móvil. Juntos, forman la Identidad de Red Doméstica (HNI), que permite que los dispositivos móviles se conecten a la red correcta.</dd>
+            <dt>LAI - Location Area Identity</dt>
+            <dd>Es el identificador de área de localización que se utiliza en redes móviles GSM. Es un código único que identifica a cada área de ubicación en una red móvil.
+                <ul>
+                    <strong>El LAI está compuesto por tres códigos decimales:</strong>
+                    <li>El código de país (MCC) de 3 dígitos</li>
+                    <li>El código de red móvil (MNC) de 2 dígitos para el estándar Europeo o 3 dígitos para el estándar Norteamericano</li>
+                    <li>El código de área de ubicación (LAC) que puede ser de hasta 5 dígitos decimales</li>
+                </ul>
+                El LAI se transmite regularmente a través del canal de control de difusión (BCCH). Esto permite que los dispositivos móviles dentro de la zona de cobertura puedan identificarse y conectarse a la zona de localización respectiva. 
+            </dd>
+
+            <dt>LAC - Location Area Code</dt>
+            <dd>LAC son las siglas de Código de Área de Localización (Location Area Code). Es un identificador numérico que se utiliza en telefonía celular para definir los límites de las áreas de ubicación. 
+                <ul>
+                    <strong>El LAC es un componente clave para la gestión de la red y la comunicación. Entre sus funciones, se encuentran:</strong>
+                    <li>Identificar de forma única cada área de ubicación</li>
+                    <li>Seguimiento de la ubicación de los dispositivos móviles</li>
+                    <li>Enrutamiento de las llamadas</li>
+                    <li>Actualización de la ubicación de los dispositivos móviles</li>
+                    <li>Direccionamiento de las llamadas entrantes</li>
+                </ul>
+                El LAC es parte de la zona de identificación local (LAI), que también incluye el código de red móvil (MNC) y el código móvil de país (MCC).<br>
+                Los dispositivos móviles almacenan el LAC en la tarjeta SIM. Cuando detectan un cambio en el LAC, solicitan una actualización de ubicación a la red.
+            </dd>
+
+            <dt>MNC - Mobile Network Code</dt>
+            <dd>El código de red móvil (MNC) es un número de dos o tres dígitos que identifica a una red móvil terrestre pública (PLMN). 
+                El MNC es asignado por el regulador nacional.<br><br>
+                El MNC se utiliza en combinación con el código de país móvil (MCC) para identificar a un operador de telefonía móvil. Juntos, forman la Identidad de Red Doméstica (HNI), que permite que los dispositivos móviles se conecten a la red correcta.
+
+                <ul>
+                    <strong>¿Para qué se usa el MNC?</strong>
+                    <li>Se utiliza para identificar a un operador de red móvil (MNO).</li>
+                    <li>Se utiliza en combinación con el código de país del móvil para obtener la identidad de la red doméstica (HNI).</li>
+                    <li>Se utiliza para identificar correctamente a un abonado, la red a la que está conectado y su ubicación geográfica. </li>
+                    <li>Se utiliza para distinguir entre diferentes operadores móviles dentro de un país determinado.</li>
+                </ul>
+
+                <ul>
+                    <strong>¿Cómo se asigna el MNC?</strong>
+                    <li>El MNC es asignado por el regulador nacional. </li>
+                </ul>
+
+                <ul>
+                    <strong>¿Cómo se usa el MNC?</strong>
+                    <li>El MNC es un componente clave que, cuando se combina con el MCC (Mobile Country Code), crea un identificador único para las redes móviles.</li>
+                </ul>
+            
+            </dd>
 
             <dt>Red móvil terrestre pública - PLMN</dt>
             <dd>Es un conjunto de servicios de telecomunicaciones inalámbricas que ofrece un operador de telefonía móvil en un país.<br>Cada PLMN tiene un código único que se compone del código de país móvil (MCC) y el código de red móvil (MNC).</dd>
 
-            <dt>Mobility Management Entity - MME</dt>
-            <dd>Es un acrónimo que significa "Entidad de Gestión de la Movilidad",Es un componente fundamental de las redes LTE (Long Term Evolution) y EPC (Evolved Packet Core), que son la base de las telecomunicaciones móviles.<br>La MME se encarga de: Gestionar las sesiones de movilidad de la red LTE, Autenticar a los suscriptores, Permitir el roaming, Transferir a otras redes.<br>La MME puede implementarse en el centro de datos o en un servidor.<br><strong>Algunas de sus características son:</strong><br><ul>
+            <dt>MME - Mobility Management Entity</dt>
+            <dd>Es un acrónimo que significa "Entidad de Gestión de la Movilidad", Es un componente fundamental de las redes LTE (Long Term Evolution) y EPC (Evolved Packet Core), que son la base de las telecomunicaciones móviles.<br>La MME se encarga de: Gestionar las sesiones de movilidad de la red LTE, Autenticar a los suscriptores, Permitir el roaming, Transferir a otras redes.<br>La MME puede implementarse en el centro de datos o en un servidor.<br>
+                
+                <ul>
+                <strong>Algunas de sus características son:</strong>
                 <li>Control de acceso</li>
                 <li>Seguridad</li>
                 <li>Autenticación</li>
@@ -481,7 +560,31 @@
                 <li>Control de admisión</li>
                 <li>Sobre la capacidad del sistema</li>
                 <li>Sobre el consumo de recursos de CPU y Memoria</li>
-            </ul></dd>
+                </ul>
+
+                <h3><strong>Puntos clave sobre MME:</strong></h3>
+
+                <ul>
+                    <strong>Función:</strong>
+                    <li>Gestiona la señalización entre los dispositivos móviles y la red central.</li>
+                    <li>Incluye el seguimiento de la ubicación del usuario.</li>
+                    <li>Manejo de los procesos de autenticación.</li>
+                    <li>Coordinación de traspasos entre diferentes torres de telefonía celular.</li>
+                </ul>
+
+                <ul>
+                    <strong>Papel en LTE:</strong>
+                    <li>MME es una parte crucial de la arquitectura Evolved Packet Core (EPC) en redes LTE.</li>
+                </ul>
+
+                <ul>
+                    <strong>Responsabilidades clave:</strong>
+                    <li>Asignación de identificadores temporales a los dispositivos de los usuarios.</li>
+                    <li>Autenticar usuarios y verificar sus detalles de suscripción.</li>
+                    <li>Gestión del establecimiento, modificación y liberación de sesiones.</li>
+                    <li>Coordinación de traspasos entre diferentes torres de telefonía celular.</li>
+                </ul>
+            </dd>
 
             <dt>GUTI - Globally Unique Temporary Identifier</dt>
             <dd>La GUTI, o Identidad Temporal Única Global, es un concepto crucial en las redes móviles 5G (quinta generación), que sirve como un identificador esencial para el Equipo de Usuario (UE) dentro de la red. GUTI está diseñado para proporcionar una identidad temporal y globalmente única para un UE, garantizando privacidad y seguridad durante la comunicación con la red 5G. Aquí hay una explicación detallada del GUTI en el contexto de 5G:<br>
@@ -524,7 +627,7 @@
                     <li>En el contexto de la división de red en 5G, GUTI desempeña un papel al respaldar el aislamiento y la personalización de servicios dentro de segmentos específicos. Contribuye a la identificación única de los UE dentro del contexto de un segmento de red particular.</li>
                 </ul>
 
-                <p>En resumen, GUTI en 5G sirve como un identificador único temporal y global para el equipo del usuario, lo que contribuye a mejorar la privacidad, la seguridad y la comunicación eficiente dentro de la red. Desempeña un papel crucial en la identificación y el seguimiento de los UE y, al mismo tiempo, minimiza la exposición de las identidades de los usuarios a largo plazo.</p>
+                En resumen, GUTI en 5G sirve como un identificador único temporal y global para el equipo del usuario, lo que contribuye a mejorar la privacidad, la seguridad y la comunicación eficiente dentro de la red. Desempeña un papel crucial en la identificación y el seguimiento de los UE y, al mismo tiempo, minimiza la exposición de las identidades de los usuarios a largo plazo.
 
             </dd>
 
@@ -536,33 +639,338 @@
             </dd>
 
             <dt>5G</dt>
-            <dd>Quinta generación de redes móviles, que ofrece mayor velocidad, menor latencia y la capacidad de conectar más dispositivos simultáneamente.</dd>
+            <dd>5G es la quinta generación de tecnología móvil inalámbrica, que permite conectar dispositivos a internet y telefonía. Es más rápida y fiable que las redes 4G. 
+                <ul>
+                    <strong>Características</strong>
+                    <li>Conecta varios dispositivos inalámbricos a la vez.</li>
+                    <li>Ofrece velocidades de transmisión de datos de hasta 10 Gbps.</li>
+                    <li>Reduce la latencia, es decir, el tiempo de respuesta de la web.</li>
+                    <li>Multiplica el número de dispositivos conectados.</li>
+                </ul>
+
+                <ul>
+                    <strong>Usos</strong>
+                    <li>Servicios de transmisión de datos en tiempo real.</li>
+                    <li>Vehículos autónomos y conectados.</li>
+                    <li>Agricultura inteligente.</li>
+                    <li>Telemedicina.</li>
+                    <li>Acceso inalámbrico fijo a dispositivos como televisores inteligentes, computadoras personales y consolas de juegos.</li>
+                </ul>
+                
+                <ul>
+                    <strong>Frecuencias</strong>
+                    <li>La banda alta, como la onda milimétrica (mmWave), tiene mayor ancho de banda para transportar más datos en áreas urbanas densas.</li>
+                    <li>La banda media equilibra la velocidad y el alcance.</li>
+                    <li>La banda baja, como el espectro de 600 MHz, viaja más lejos y puede atravesar más obstáculos.</li>
+                </ul>
+            </dd>
 
             <dt>Ping</dt>
-            <dd>Herramienta de red utilizada para medir el tiempo de respuesta entre un dispositivo y un servidor o equipo remoto.</dd>
-
-            <dt>QoS - Quality of Service</dt>
-            <dd>Medida de la calidad del servicio en redes, que asegura la transmisión de datos con prioridades específicas para garantizar el rendimiento de aplicaciones críticas.</dd>
-
-            <dt>Roaming</dt>
-            <dd>Capacidad de un usuario móvil para utilizar su servicio de red fuera de su área de cobertura local, generalmente en el extranjero.
-
-            <dt>Backhaul</dt>
-            <dd>Conexión entre una torre celular y la red central de un operador, clave para el funcionamiento de redes móviles.</dd>
-
-            <dt>OTT - Over The Top</dt>
-            <dd>Servicios que utilizan la infraestructura de internet para ofrecer contenidos, como Netflix, WhatsApp o YouTube, sin intervención directa de los operadores tradicionales.</dd>
+            <dd>En telecomunicaciones, ping es una herramienta que mide la latencia de una conexión de red, es decir, el tiempo que tarda un paquete de datos en viajar entre dos dispositivos. Se mide en milisegundos (ms).<br><br>
+                El ping es una herramienta de diagnóstico que se puede usar para solucionar problemas de red. Se puede encontrar en casi cualquier sistema operativo con conectividad de red. 
+                <ul>
+                    <strong>¿Cómo funciona el ping?</strong>
+                    <li>El ping envía una solicitud a un dispositivo específico.</li>
+                    <li>Si la solicitud tiene éxito, el dispositivo de destino devuelve una respuesta al dispositivo de origen.</li>
+                    <li>El ping ayuda a determinar si los parámetros TCP/IP están configurados correctamente, si la red no está obstruida, etc.</li>
+                </ul>
+                
+                <ul>
+                    <strong>¿Qué significa ping alto o ping bajo?</strong>
+                    <li>Un ping alto significa que la calidad de la conexión de internet se ve perjudicada y hay una demora en el tiempo de respuesta.</li>
+                    <li>Un ping bajo es preferible, especialmente en juegos donde el tiempo y la posición son importantes.</li>
+                </ul>
+            </dd>
 
             <dt>Latencia</dt>
-            <dd>Tiempo que tarda un paquete de datos en viajar desde el origen hasta el destino en una red.</dd>
+            <dd>La latencia en telecomunicaciones es el tiempo que tarda en transmitirse información entre dos puntos. Se mide en milisegundos (ms). 
 
-            <dt>VoLTE - Voice over LTE</dt>
-            <dd>Es una tecnología que permite hacer y recibir llamadas de voz a través de la red 4G.<br>Entre sus ventajas se encuentran: Mejor calidad de audio, Llamadas más rápidas, Posibilidad de navegar por internet mientras se habla, Mayor duración de la batería, Mayor cobertura.<br>
-            <strong>Beneficios de VoLTE</strong><br>
-            VoLTE permite una experiencia de conversación más clara y natural. También permite el uso simultáneo de servicios de voz y datos, lo que mejora la eficiencia general y la satisfacción del usuario.<br>
-            <strong>¿Qué sucede si el dispositivo no es compatible con VoLTE?</strong><br>
-            Si el dispositivo no es compatible con VoLTE, es posible realizar y recibir llamadas de tipo voz IP, como WhatsApp o Telegram.</dd>
+                <ul>
+                    <strong>¿Cómo se calcula? </strong>
+                    <li>Se calcula restando el tiempo de envío del tiempo de recepción de un paquete de datos.</li>
+                    <li>Por ejemplo, si un servidor envía un paquete de datos a las 7:05:00.000 GMT y el otro lo recibe a las 7:05:00.221 GMT, la latencia es de 221 ms.</li>
+                </ul>
+
+                <ul>
+                    <strong>¿Cómo afecta?</strong>
+                    <li>La latencia afecta la velocidad de descarga de internet. </li>
+                    <li>Una latencia alta dificulta la gestión de riesgos en ciberseguridad. </li>
+                    <li>En telefonía, una latencia elevada puede causar mala calidad en las llamadas. </li>
+                    <li>En videojuegos, la latencia es el tiempo que tarda el juego en responder a una acción del jugador. </li>
+                </ul>
+
+                <ul>
+                    <strong>¿Cómo se reduce?</strong>
+                    <li>La latencia se puede reducir optimizando las imágenes para que se carguen más rápido, y reduciendo el tamaño de los archivos.</li>
+                    <li>También se puede configurar una página web para que cargue primero la zona por encima del pliegue de una página.</li>
+                </ul>
+            </dd>
+
+            <dt>Roaming</dt>
+            <dd>La itinerancia, o roaming, es un servicio por el cual un usuario puede seguir utilizando los servicios contratados en su teléfono móvil en un país diferente al de su operador de origen sin necesidad de cambiar de operador ni realizar ninguna gestión adicional.<br><br>
+                El roaming permite a los dispositivos móviles conectarse a redes secundarias, como las de otros proveedores, cuando no están dentro de la cobertura de su operador.<br><br>
+                El roaming es útil en situaciones de emergencia, ya que permite a los viajeros mantenerse en contacto con familiares y amigos, y recibir información importante.
+
+                <ul>
+                    <strong>¿Cómo se cobra el roaming?</strong>
+                    <li>El proveedor de red móvil cobra por los datos que se usan en el extranjero, incluidos los datos usados para enviar mensajes de texto, acceder a Internet o hacer una llamada. </li>
+                </ul>
+
+                <ul>
+                    <strong>¿Cómo activar el roaming?</strong>
+                    <li>Algunos planes de datos incluyen roaming internacional sin cargos adicionales. Para más información, se puede contactar al operador. </li>
+                </ul>
+            </dd>
+
+            <dt>Backhaul</dt>
+            <dd>Backhaul es un término general que describe la infraestructura de transporte que se utiliza para conectar la red de acceso por radio (RAN) y el núcleo de una red móvil. Este enlace vital entre la ubicación de la antena celular y el hub del proveedor es un componente central de la infraestructura de red inalámbrica.
+
+                <ul>
+                    <strong>Funciones</strong>
+                    <li>Transporta datos desde los nodos de acceso hasta el núcleo de la red.</li>
+                    <li>Permite que las torres de telefonía celular se comuniquen entre sí.</li>
+                    <li>Conecta subredes en los sitios celulares a la red central.</li>
+                </ul>
+
+                <ul>
+                    <strong>Importancia</strong>
+                    <li>La capacidad y eficiencia del backhaul son fundamentales para el rendimiento de la red.</li>
+                    <li>Problemas en el backhaul pueden causar latencia, fluctuaciones o pérdida de paquetes.</li>
+                    <li>Un backhaul subdimensionado puede limitar la calidad del servicio.</li>
+                </ul>
+
+                <ul>
+                    <strong>Backhaul 5G</strong>
+                    <li>El backhaul 5G es un componente clave para permitir el potencial de la tecnología 5G.</li>
+                    <li>Las empresas de telecomunicaciones utilizan tecnologías como mmWave, cables de fibra óptica y densificación de red para garantizar la conectividad de alta velocidad y baja latencia.</li>
+                </ul>
+
+                <ul>
+                    <strong>Pruebas y monitoreo</strong>
+                    <li>Las pruebas de backhaul y la monitorización de las métricas de rendimiento pueden ayudar a identificar y solucionar problemas.</li>
+                </ul>
+            </dd>
+
+            <dt>RAN - </dt>
+            <dd>La "Red de Acceso de Radio" o RAN (Radio Access Network) es una parte fundamental de las redes de telecomunicaciones móviles. En términos sencillos, es la parte de la red que conecta los dispositivos de los usuarios (como teléfonos móviles) con la red central.
+
+                <ul>
+                    <strong>Función principal:</strong>
+                    <li>La RAN es responsable de establecer y mantener la conexión inalámbrica entre los dispositivos de los usuarios y la red central.</li>
+                    <li>Gestiona los recursos de radio, asegurando que los usuarios puedan realizar llamadas, enviar mensajes y acceder a datos de manera eficiente.</li>
+                </ul>
+
+                <ul>
+                    <strong>Componentes clave:</strong>
+                    <li>Estaciones base: Son los puntos de acceso que transmiten y reciben señales de radio.</li>
+                    <li>Antenas: Permiten la propagación de las señales de radio.</li>
+                    <li>Equipamiento de control: Gestiona la conexión y la asignación de recursos.</li>
+                </ul>
+
+                <ul>
+                    <strong>Evolución y tendencias:</strong>
+                    <li>Con la llegada de tecnologías como 5G, la RAN está evolucionando hacia arquitecturas más flexibles y abiertas, como la O-RAN (Open RAN).</li>
+                    <li>O-RAN busca desagregar los componentes de la RAN, permitiendo la interoperabilidad entre equipos de diferentes proveedores.</li>
+                    <li>Virtualización: La virtualización de las RAN (vRAN) está ganando terreno, permitiendo que las funciones de la RAN se ejecuten como software en hardware estándar.</li>
+                </ul>
+                En resumen, la RAN es la infraestructura que permite la comunicación inalámbrica entre los dispositivos móviles y la red central, facilitando la conectividad que utilizamos a diario.
+            </dd>
+
+            <dt>OTT - Over The Top</dt>
+            <dd>Es un modelo de distribución de contenido multimedia que se transmite a través de internet. Los servicios OTT pueden ser de audio, video, voz o datos.
+
+                <ul>
+                    <strong>Características</strong>
+                    <li>Se pueden contratar directamente o a través de un proveedor de telecomunicaciones.</li>
+                    <li>Se pueden acceder a través de dispositivos como computadoras, teléfonos, consolas de juegos, tablets o televisores inteligentes.</li>
+                    <li>No requieren control de los operadores de telecomunicaciones.</li>
+                    <li>Permiten transmitir contenido multimedia directamente desde las aplicaciones y sitios web de los productores de contenido.</li>
+                </ul>
+
+                <ul>
+                    <strong>Ventajas</strong>
+                    <li>Reducen la distancia de las transmisiones en directo con los espectadores.</li>
+                    <li>Mejoran la calidad de la experiencia para la audiencia.</li>
+                    <li>Ofrecen una mayor continuidad del servicio en caso de que suceda cualquier contratiempo.</li>
+                </ul>
+            </dd>
+
+            <dt>VoLTE - Voice over Long-Term Evolution</dt>
+            <dd>VoLTE, que significa 'Voz sobre Evolución a Largo Plazo', es básicamente una tecnología que permite hacer llamadas de voz a través de una red 4G LTE o 5G, en lugar de las redes 2G o 3G más antiguas.
+
+                <ul>
+                    <strong>Cómo funciona:</strong>
+                    <li>En lugar de utilizar la tecnología tradicional de conmutación de circuitos, VoLTE utiliza la tecnología de conmutación de paquetes, que es la misma tecnología utilizada para la transmisión de datos a través de internet.</li>
+                    <li>Esto significa que las llamadas de voz se convierten en paquetes de datos y se transmiten a través de la red de datos LTE o 5G.</li>
+                </ul>
+
+                <ul>
+                    <strong>Beneficios</strong>
+                    <li>Calidad de llamada mejorada: VoLTE proporciona calidad de voz de alta definición (HD), lo que resulta en llamadas más claras y con un sonido más natural.</li>
+                    <li>Tiempos de establecimiento de llamada más rápidos: Las llamadas se conectan más rápido en comparación con las llamadas de voz tradicionales.</li>
+                    <li>Voz y datos simultáneos: Los usuarios pueden navegar por internet o usar aplicaciones que consumen muchos datos mientras están en una llamada sin interrupciones.</li>
+                    <li>Uso más eficiente de los recursos de la red: VoLTE permite un uso más eficiente del ancho de banda de la red.</li>
+                </ul>
+
+                <ul>    
+                    <strong>Puntos clave:</strong>
+                    <li>VoLTE se basa en la arquitectura de red del Subsistema Multimedia IP (IMS).</li>
+                    <li>Para usar VoLTE, tanto el dispositivo como el operador de la red móvil deben ser compatibles con él.</li>
+                </ul>
+
+                En esencia, VoLTE mejora la experiencia de llamadas móviles al ofrecer llamadas de mayor calidad y permitir la multitarea sin problemas.                
+            </dd>
+
+            <dt>TAC - Type Allocation Code</dt>
+            <dd>El TAC, o Código de Área de Seguimiento, es un elemento importante en los sistemas de comunicación inalámbrica 5G (Quinta Generación). Desempeña un papel clave en la gestión de la red y permite un seguimiento e identificación eficientes del Equipo de Usuario (UE) a medida que se mueve dentro de la red. Profundicemos en la definición, estructura y significado detallados del código de área de seguimiento en el contexto de 5G:
+
+                <ul>
+                    <strong>Definición de TAC:</strong>
+                    <li>El código de área de seguimiento (TAC) es un identificador numérico utilizado en redes celulares, incluido 5G, para identificar de forma única un área de seguimiento dentro de la red.</li>
+                    <li>El código de área de seguimiento (TAC) es un identificador numérico utilizado en redes celulares, incluido 5G, para identificar de forma única un área de seguimiento dentro de la red.</li>
+                </ul>
+
+                <ul>
+                    <strong>Arquitectura de red:</strong>
+                    <li>En la arquitectura 5G, la red se divide en áreas de seguimiento y cada área de seguimiento se identifica mediante un TAC único.</li>
+                    <li>Un área de seguimiento puede constar de una o más células, y los UE dentro de un área de seguimiento pueden comunicarse con la red sin necesidad de actualizar su información de ubicación siempre que permanezcan dentro de la misma área de seguimiento.</li>
+                </ul>
+
+                <ul>
+                    <strong>Composición y Estructura:</strong>
+                    <li>El TAC suele ser un valor numérico expresado en formato hexadecimal.</li>
+                    <li>En 5G, el TAC es parte del PLMN-Id (Identificador de red móvil terrestre pública) y se incluye en el PLMN-Id junto con el MCC (Código de país móvil) y el MNC (Código de red móvil). El PLMN-Id identifica de forma única una PLMN y el TAC ayuda a identificar el área de seguimiento dentro de esa PLMN.</li>
+                </ul>
+
+                <ul>
+                    <strong>Seguimiento de ubicación y gestión de movilidad:</strong>
+                    <li>El TAC es crucial para el seguimiento de la ubicación y la gestión de la movilidad en las redes 5G. A medida que los UE se mueven dentro de la red, la red necesita conocer su ubicación para gestionar eficientemente los traspasos y garantizar un servicio continuo.<br>
+                        Al identificar el área de seguimiento, el TAC permite que la red determine la ubicación general del UE sin requerir actualizaciones frecuentes de la información de ubicación del UE.</li>
+                </ul>
+                
+                En resumen, el código de área de seguimiento (TAC) es un componente crítico en las redes 5G, que contribuye al seguimiento eficiente de la ubicación, la gestión de la movilidad y la optimización de los procedimientos de la red. Su función en la identificación de áreas de seguimiento ayuda a agilizar las transferencias, los procedimientos de localización y el rendimiento general de la red, garantizando una conectividad perfecta para los equipos de usuario que se mueven dentro de la red 5G.
+            </dd>
+
+            <dt>MEC - Mobile Edge Computing</dt>
+            <dd>Es una tecnología que acerca los recursos informáticos al borde de la red, lo que permite un procesamiento más rápido y una menor latencia para las aplicaciones y los servicios. En la industria de las telecomunicaciones, MEC desempeña un papel crucial en la mejora del rendimiento y la eficiencia de las redes móviles.<br><br>
+                
+                La MEC funciona implementando recursos informáticos, como servidores, almacenamiento y equipos de red, en el borde de la red, generalmente en estaciones base o puntos de acceso o cerca de ellas. Esto permite que el procesamiento de datos se realice más cerca del usuario final, lo que reduce la distancia que deben recorrer los datos y minimiza la latencia. Al descargar las tareas de procesamiento de los centros de datos centralizados al borde de la red, la MEC puede mejorar significativamente el rendimiento de las aplicaciones y los servicios que requieren procesamiento de datos en tiempo real, como la transmisión de video, los juegos en línea y la realidad virtual.<br>
+
+                Una de las principales ventajas de la MEC en las telecomunicaciones es su capacidad para admitir aplicaciones de baja latencia, como los vehículos autónomos, la automatización industrial y la realidad aumentada. Al reducir la latencia y aumentar la velocidad de procesamiento de datos, la MEC permite que estas aplicaciones funcionen de forma más eficiente y fiable. Por ejemplo, en el caso de los vehículos autónomos, la MEC puede proporcionar procesamiento de datos en tiempo real para tareas como la detección de objetos, la prevención de colisiones y la optimización de rutas, lo que permite una toma de decisiones y tiempos de respuesta más rápidos.<br>
+
+                MEC también ayuda a los operadores de telecomunicaciones a optimizar sus recursos de red y mejorar la experiencia general del usuario. Al distribuir los recursos informáticos en el borde de la red, los operadores pueden reducir la carga en su red central y mejorar la escalabilidad y flexibilidad de sus servicios. MEC permite a los operadores implementar nuevos servicios y aplicaciones de manera más rápida y eficiente, sin necesidad de realizar actualizaciones costosas a su infraestructura existente.<br>
+            </dd>
+
+            <dt>eMBB - Enhanced Mobile Broadband</dt>
+            <dd>
+                Es una tecnología 5G que ofrece velocidades de datos más rápidas y menor latencia que las redes 4G, mejorando la experiencia del usuario en aplicaciones como streaming de video, juegos y realidad aumentada.<br><br>
+
+                <strong>En detalle:</strong><br>
+
+                <ul>
+                    <strong>¿Qué es?</strong>
+                    <li>eMBB (Enhanced Mobile Broadband) es una de las primeras aplicaciones de la tecnología 5G que busca mejorar la experiencia de los usuarios de banda ancha móvil, ofreciendo velocidades de descarga y carga más rápidas, y menor latencia (tiempo de retraso) que las redes 4G LTE. </li>
+                </ul>
+                <ul>
+                    <strong>¿Para qué sirve?</strong>
+                    <li>eMBB se enfoca en mejorar la experiencia del usuario en aplicaciones que requieren alta velocidad y baja latencia, como:
+                        <ul>
+                            <li>Streaming de video: Ver videos de alta calidad sin interrupciones.</li>
+                            <li>Juegos online: Jugar juegos online sin retrasos o lag. </li>
+                            <li>Realidad aumentada y virtual: Experiencias inmersivas con mayor fluidez. </li>
+                            <li>Aplicaciones de trabajo móvil: Escritorios virtuales y espacios de trabajo digitales. </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul>
+                    <strong>¿Cómo lo logra?</strong>
+                    <li>eMBB utiliza un ancho de banda más amplio y tecnologías avanzadas para lograr mayores velocidades de datos y menor latencia. </li>
+
+                    <ul>
+                        <strong>Ejemplos de uso:</strong>
+                        <li>Descargar archivos grandes rápidamente. </li>
+                        <li>Transmisiones de video en vivo de alta calidad. </li>
+                        <li>Conexiones de alta velocidad en dispositivos móviles. </li>
+                        <li>Sistemas de transporte que requieren enlaces de comunicación robustos. </li>
+                    </ul>
+                </ul>
+
+                <ul>
+                    <strong>Otras características de eMBB:</strong>
+                    <li>Capacidad para soportar grandes cantidades de tráfico de datos. </li>
+                    <li>Experiencia fluida e inmersiva para el usuario. </li>
+                    <li>Posibilidad de interacción entre múltiples usuarios. </li>
+                    <li>Reconocimiento de contexto (Context Recognition).</li>
+                </ul>
+            </dd>
+
+            <dt>URLLC - Ultra Reliable Low Latency Communications</dt>
+            <dd>Significa Comunicaciones Ultrafiables de Baja Latencia, es una tecnología clave de 5G diseñada para comunicaciones extremadamente fiables con retrasos mínimos, crucial para aplicaciones que requieren respuesta en tiempo real, como vehículos autónomos ó cirugía remota.<br><br>
+
+                <strong>En detalle:</strong>
+
+                <ul>
+                    <strong>Definición:</strong>
+                    <li>URLLC es una de las tres principales categorías de servicios 5G, junto con eMBB (Enhanced Mobile Broadband) y mMTC (Massive Machine Type Communications).</li>
+                    <ul>
+                        <strong>Características:</strong>
+                        <li>Baja latencia: URLLC busca minimizar el retraso en la transmisión de datos, con objetivos de latencia de extremo a extremo de menos de 1 milisegundo. </li>
+                        <li>Alta fiabilidad: URLLC se enfoca en garantizar la entrega de datos de forma fiable, con tasas de error de paquete (PER) muy bajas (por debajo de 10^-5). </li>
+                    </ul>
+                </ul>
+
+                <ul>
+                    <strong>Aplicaciones:</strong>
+                    <li>Automatización industrial: Control remoto de maquinaria y procesos.</li>
+                    <li>Vehículos autónomos: Comunicación segura y de baja latencia para la conducción autónoma. </li>
+                    <li>Cirugía remota: Permite la realización de cirugías a distancia con alta calidad de video y control preciso. </li>
+                    <li>Infraestructura en ferrocarril y transporte: Control y gestión de sistemas de transporte. </li>
+                </ul>
+
+                <ul>
+                    <strong>Importancia:</strong>
+                    <li>URLLC es vital para la Industria 4.0 y la Internet de las cosas (IoT), donde la fiabilidad y la baja latencia son esenciales para la operación de sistemas críticos. </li>
+                    <ul>
+                        <strong>Requisitos:</strong>
+                        <li>Latencia: Menos de 1 ms de latencia de extremo a extremo. </li>
+                        <li>Fiabilidad: Tasa de error de paquete (PER) menor a 10^-5. </li>
+                    </ul>
+                </ul>
+            </dd>
+            
+            <dt>mMTC - Massive Machine-Type Communications</dt>
+            <dd>Es una tecnología 5G que permite la conexión masiva de dispositivos IoT (Internet de las Cosas) de forma eficiente y confiable, como sensores y medidores, para aplicaciones como ciudades inteligentes y agricultura inteligente.<br><br>
+                
+                <strong>En detalle:</strong>
+
+                <ul>
+                    <strong>¿Qué es?</strong>
+                    <li>mMTC es una de las tres categorías de servicios 5G definidas por 3GPP, junto con la banda ancha móvil mejorada (eMBB) y las comunicaciones ultra fiables de baja latencia (URLLC). </li>
+                </ul>
+                       
+                <ul>
+                    <strong>¿Para qué sirve?</strong>
+                    <li>Su objetivo principal es soportar la implementación masiva de dispositivos IoT, como sensores y medidores, que requieren una comunicación eficiente y de bajo consumo de energía. </li>
+                </ul>
+
+                <ul>
+                    <strong>Ejemplos de aplicaciones:</strong>
+                    <li>Ciudades inteligentes: Gestión del tráfico, ahorro de energía y agua, seguridad y alumbrado inteligente. </li>
+                    <li>Agricultura inteligente: Monitoreo de cultivos, riego y gestión de granjas.</li>
+                </ul>
+
+                <ul>
+                    <strong>Características:</strong>
+                    <li>Alta densidad de conexión: Permite conectar un gran número de dispositivos. </li>
+                    <li>Bajo consumo de energía: Diseñada para dispositivos con baterías de pequeña capacidad. </li>
+                    <li>Confiabilidad: Ofrece una comunicación robusta y segura. </li>
+                    <li>Amplia cobertura: Proporciona conectividad inalámbrica en áreas geográficas extensas. </li>
+                </ul>
+            </dd>
+
         </dl>
+
     </section>
 </main>
 
