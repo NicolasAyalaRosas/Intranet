@@ -41,7 +41,9 @@ Favor de validar con los usuarios.`,
 
     "Migracion de 1 DN": `Estimados,
 
-Se aplica migración y asignación de oferta para el xxxxxx DN proporcionados.
+Se aplica migración y asignación de oferta para el DN xxxxxx.
+
+Se asigna paquete: 
 
 Se comparte evidencia.
 Favor de validar con los usuarios.`,

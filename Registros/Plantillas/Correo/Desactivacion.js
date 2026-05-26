@@ -12,7 +12,7 @@ Saludos.`,
 
     "Desactivación de 2 ó mas DN": `Estimado Cliente,
 
-Conforme a lo solicitado, se realizó la desactivación de los números xxxxxx y xxxxxx de manera correcta.
+Conforme a lo solicitado, se realizó la desactivación de los xxxxxx números proporcionados de manera correcta.
 
 Sin otro particular, quedamos al pendiente de sus comentarios.
 

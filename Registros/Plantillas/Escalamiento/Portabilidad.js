@@ -8,7 +8,9 @@ DN Transitorio:
 DN a Portar:
 ICCID:
 IMSI:
-PortID: `,
+PortID: 
+Offer ID_adquirido:
+Offer ID_promocion:`,
 
 
 
@@ -20,7 +22,10 @@ DN Transitorio:
 DN a Portar:
 ICCID:
 IMSI:
-PortID: `,
+PortID:
+Offer ID_adquirido:
+Offer ID_promocion:
+ `,
 
 
 
@@ -32,7 +37,10 @@ DN Transitorio:
 DN a Portar:
 ICCID:
 IMSI:
-PortID: `,
+PortID: 
+Offer ID_adquirido:
+Offer ID_promocion:
+`,
 
 
 
@@ -48,7 +56,10 @@ DN Transitorio:
 DN a Portar:
 ICCID:
 IMSI:
-PortID:`,
+PortID:
+Offer ID_adquirido:
+Offer ID_promocion:
+`,
 
 
 
@@ -64,7 +75,10 @@ DN Transitorio:
 DN a Portar:
 ICCID:
 IMSI:
-PortID:`,
+PortID:
+Offer ID_adquirido:
+Offer ID_promocion:
+`,
 
 
 
@@ -80,7 +94,10 @@ DN Transitorio:
 DN a Portar:
 ICCID:
 IMSI:
-PortID: `,
+PortID: 
+Offer ID_adquirido:
+Offer ID_promocion:
+`,
 
 
 
@@ -96,7 +113,10 @@ DN Transitorio:
 DN a Portar:
 ICCID:
 IMSI:
-PortID: `,
+PortID:
+Offer ID_adquirido:
+Offer ID_promocion:
+`,
 
 
 

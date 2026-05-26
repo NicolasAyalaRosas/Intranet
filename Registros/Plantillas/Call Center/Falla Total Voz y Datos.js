@@ -164,11 +164,6 @@ Validaciones en sistema:
 - Paquete: N/A
 - Bolsas: N/A
 
-Validaciones teléfono:
-
-- IMEI: xxxxxx
-- Equipo: xxxxxx
-
 Posible causa:
 
 - La línea mantiene estatus B2W, por lo que se encuentra bloqueada y sin servicios, tras validar en V360 se confirma que esta no ha sido vinculada al RNU.

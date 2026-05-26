@@ -31,4 +31,12 @@ Le informamos que el proceso de portabilidad solicitado ha finalizado correctame
     "Portabilidad Rechazada - Documentación Invalida ": `Estimados,
 
 Le informamos que el proceso de portabilidad solicitado ha sido rechazado derivado a inconsistencias con la documentación proporcionada, se enviara por correo detalle del motivo y quedamos en espera de que se envié la documentación corregida.`,
+
+
+
+    "Portabilidad Rechazada - NIP Incorrecto ó Vencido": `Estimados,
+
+Le informamos que el proceso de portabilidad solicitado ha sido rechazado derivado a que el NIP proporcionado xxxxxx.
+
+Se comparte evidencia y se solicita a cliente confirmar la información con el usuario para dar seguimiento a su petición.`,
 };
