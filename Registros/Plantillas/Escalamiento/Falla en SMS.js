@@ -31,4 +31,12 @@ Solicitamos de su apoyo para validar y aplicar correcciones sobre el DN xxxxxx c
 - Se prueba enviar o recibir SMS, intentando “activar” iMessage mediante la cuenta de Apple ID., sin efecto.
 
 Se realiza de forma posterior reinicio de terminal y pruebas sobre la misma pero persiste fallo.`,
+
+
+
+    "Falla en OTP Vinculacion": `Estimados,
+
+Solicitamos de su apoyo para validar el DN xxxxxx con IMSI xxxxxx ya que al intentar realizar el proceso de vinculación al RNU la plataforma envia un SMS OTP que nunca llega al numero que se desea vincular.
+
+Se comparte evidencia y quedamos en espera de corrección de su lado.`,
 };

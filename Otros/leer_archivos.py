@@ -6,7 +6,7 @@ from openpyxl.styles import NamedStyle
 # ARCHIVOS
 # ============================================
 
-archivo_csv = "processed.1779378757_TRIPLETAS POR BATCH_iccid.csv"
+archivo_csv = "processed.1779746409_TRIPLETAS POR BATCH_msisdn.csv"
 archivo_xlsx = "archivo_protegido.xlsx"
 
 # ============================================

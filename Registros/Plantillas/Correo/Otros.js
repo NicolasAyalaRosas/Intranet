@@ -109,4 +109,15 @@ Se realiza renovación solicitada, la línea xxxxxx ya cuenta con el paquete xxx
 
 Quedamos al pendiente de sus comentarios.
 Saludos.`,
+
+
+
+    "Predesactivacion de 1 DN": `Estimado cliente, 
+
+Se realiza predesactivacion del DN xxxxxx conforme a sus instrucciones.
+
+Se comparte evidencia: 
+
+Quedamos al pendiente de sus comentarios.
+Saludos.`,
 };

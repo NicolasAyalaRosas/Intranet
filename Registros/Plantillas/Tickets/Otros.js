@@ -35,6 +35,11 @@ Se realiza cambio de oferta para los xxxxxx DN proporcionados de manera correcta
 
 Se comparte archivo con detalle de fecha de activación, paquete original y paquete asignado.
 
+DN:
+Fecha de Vigencia Original:
+Paquete Original:
+Paquete Asignado: 
+
 Favor de validar con los usuarios.`,
 
 

@@ -76,7 +76,7 @@ Solución:
 OMV y DN:
 DN de Contacto:
 
-Reporte: Se genera seguimiento a partir de un correo recibido el día xxxxxx, en el cual se indica que el usuario no cuenta con servicio de xxxxxx.
+Reporte: Se genera seguimiento a partir de un correo recibido el día xxxxxx, en el cual se indica que xxxxxx.
 
 Validaciones en sistema:
 

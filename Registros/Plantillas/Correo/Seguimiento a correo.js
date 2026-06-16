@@ -13,9 +13,9 @@ Saludos cordiales.`,
 
     "Llamada de Salida - No resuelto": `Estimado Cliente,
 
-Le informamos que se realizó llamada de salida al número alterno xxxxxx, teniendo contacto con el usuario de la línea, con su apoyo se validaron las correctas configuraciones de la terminal en uso, sin embargo, el fallo reportado persiste.
+Le informamos que se realizó llamada de salida al número alterno xxxxxx, teniendo contacto con el usuario de la línea, con su apoyo se validaron las correctas configuraciones de la terminal en uso y se aplicaron los ajustes necesarios, sin embargo, el fallo reportado persiste.
 
-Respecto al equipo, se valida que la terminal corresponde a un equipo de Marca: xxxxxx, Modelo: xxxxxx, se muestra como xxxxxx, por lo que sera necesario xxxxxx.
+Respecto al equipo, se valida que la terminal corresponde a un equipo de Marca: xxxxxx, Modelo: xxxxxx, que se muestra como xxxxxx en nuestro sistema.
 
 Derivado a lo anterior realiza el escalamiento del caso reportado y, en cuanto contemos con avances, se brindará retroalimentación por este medio.
 
@@ -101,11 +101,9 @@ Saludos.`,
 
     "Reporte escalado directamente": `Estimado Cliente,
 
-Tras la validación del DN xxxxxx, de nuestra parte no se detectan alteraciones que pudieran afectar el servicio.
+Tras la validación del DN xxxxxx, de nuestra parte no se detectan alteraciones que pudieran provocar dicho comportamiento.
 
-Respecto al equipo, se valida que la terminal Marca: xxxxxx, Modelo: xxxxxx, se muestra como xxxxxx.
-
-Se realiza el escalamiento del caso reportado y, en cuanto contemos con avances, se brindará retroalimentación por este medio.
+Derivado a lo anterior se realiza el escalamiento del caso reportado y, en cuanto contemos con avances, se brindará retroalimentación por este medio.
 
 Quedamos al pendiente de sus comentarios.
 Saludos.`,

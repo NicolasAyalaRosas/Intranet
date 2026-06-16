@@ -125,5 +125,21 @@ Posible causa:
 Solución:
 
 - Se informa al Usuario-Distribuidor que la línea no puede ser recuperada.
-- En caso de requerir el servicio, se orienta sobre la adquisición de una nueva SIM.`
+- En caso de requerir el servicio, se orienta sobre la adquisición de una nueva SIM.`,
+
+
+
+  "Proceso de recarga mal aplicado - Pantera":
+`Nombre:
+OMV y DN:
+
+Reporte: Se comunica Usuario-Distribuidor reportando una recarga no aplicada.
+
+Posible causa:
+
+- Se valida con el usuario que el proceso aplicado en la pagina de bigcel.mx fue una compra y no una recarga.
+
+Solución:
+
+- Se escala caso con N3 de pantera para cancelar la compra y aplicar la recarga solicitada, se solicito tiempo de espera al usuario para que se aplique el movimiento y se le indica le devolveremos la llamada.`,
 };

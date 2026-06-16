@@ -39,7 +39,7 @@ Cabe destacar que el DN ya se encuentra vinculado al RNU por lo que desconocemos
 
 
 
-    "SPN Incorrecto": `Estimados, 
+    "SPN Incorrecto 2 o más Líneas": `Estimados, 
 
 Solicitamos de su apoyo para validar el siguiente lote de SIM´s que al activar marcan un SPN incorrecto, se comparte detalle:
 
@@ -48,7 +48,18 @@ IMSI Final:
 ICCID Inicial: 
 ICCID Final:
 SPN Correcto:
+`,
 
+
+
+    "SPN Incorrecto": `Estimados, 
+
+Solicitamos de su apoyo para validar el DN xxxxxx con IMSI xxxxxx que al activar marca un SPN incorrecto.
+
+SPN Actual:
+SPN Correcto:
+
+Adicional se intento impactar el cambio via V360 con la siguiente respuesta: xxxxxx
 `,
 
 }
