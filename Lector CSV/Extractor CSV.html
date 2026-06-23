@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extractor CSV</title>
+
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../Lector CSV/style_csv.css">
+</head>
+<body>
+
+<header>
+    <img src="../Imagenes_y_Archivos/Logo_Addinteli_2.png"
+         alt="Logo Addinteli"
+         class="logo">
+
+    <div class="menu-hamburguesa">
+        <button id="menu-toggle">☰ Menú</button>
+
+        <ul class="menu-desplegable" id="menu-desplegable">
+            <li><a href="../index.html">Inicio</a></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+
+        <h1>📊 Extractor de Columnas CSV</h1>
+
+        <div class="upload-container">
+
+            <label for="archivoCSV" class="btn-cargar">
+                Seleccionar Archivo CSV
+            </label>
+
+            <input type="file"
+                   id="archivoCSV"
+                   accept=".csv">
+
+            <p id="nombreArchivo"></p>
+
+        </div>
+
+        <div id="columnasContainer" class="columnas-grid"></div>
+
+        <div id="visorContainer" class="visor-container oculto">
+
+            <h3 id="tituloColumna"></h3>
+
+            <textarea
+                id="contenidoColumna"
+                readonly>
+            </textarea>
+
+            <div class="botones-container">
+
+                <button id="copiarBtn">
+                    📋 Copiar
+                </button>
+
+                <button id="descargarBtn">
+                    💾 Descargar TXT
+                </button>
+
+                <button id="limpiarBtn">
+                    🗑️ Limpiar
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Intranet Corporativa</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+<script src="../Lector CSV/csv.js"></script>
+
+<script>
+document.getElementById('menu-toggle').addEventListener('click', function(e){
+    e.stopPropagation();
+    document.getElementById('menu-desplegable').classList.toggle('mostrar');
+});
+
+document.addEventListener('click', function(e){
+    const menu = document.getElementById('menu-desplegable');
+    const button = document.getElementById('menu-toggle');
+
+    if(!menu.contains(e.target) &&
+       !button.contains(e.target)){
+        menu.classList.remove('mostrar');
+    }
+});
+</script>
+
+</body>
+</html>

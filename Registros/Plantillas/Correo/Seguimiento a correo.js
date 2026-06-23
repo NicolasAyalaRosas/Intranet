@@ -138,7 +138,7 @@ Saludos.`,
 
 Tras la validación del DN xxxxxx, no se detectan alteraciones que pudieran afectar el servicio.
 
-Derivado a lo anterior, solicitamos de su valioso apoyo para informar al usuario y solicitar contacte a nuestro Centro de Atención, en donde un asesor podrá asistirle y validar directamente la terminal afectada.
+Derivado a lo anterior, solicitamos de su valioso apoyo para informar al usuario y solicitar contacte a nuestro Centro de Atención, en donde un asesor podrá apoyarle y validar directamente la terminal afectada.
 
 Quedamos al pendiente de sus comentarios.
 Saludos.`,

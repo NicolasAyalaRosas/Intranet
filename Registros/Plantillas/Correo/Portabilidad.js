@@ -2,7 +2,9 @@ window.PLANTILLAS.correo ["Portabilidad"] = {
 
     "Portabilidad solicitada": `Estimado Cliente,
 
-Le informamos que se ha recibido su petición y ya nos encontramos trabajando en ella, por lo que una vez logremos generar la carga y en su determinado caso la confirmación del trámite, les notificaremos por este medio.
+Le informamos que se ha recibido su petición. 
+
+En este momento, el trámite se encuentra cargado a la plataforma ABD para validación del Ente Regulador y el Operador Donante. En el caso de que se nos permita confirmar dicho proceso, le notificaremos por este medio. 
 
 Se comparte detalle para su revisión:
 
@@ -104,7 +106,7 @@ Saludos.`,
 
     "Portabilidad Rechazada NIP Incorrecto ó Vencido - 2 o más DN": `Estimado cliente, 
 
-Le informamos que, se realizó la petición de portabilidad para las líneas proporcionadas proporcionadas, dicho proceso ha sido rechazado, esto derivado a que los NIP compartidos xxxxxx.
+Le informamos que, se realizó la petición de portabilidad para las líneas proporcionadas proporcionadas, sin embargo, dicho proceso ha sido rechazado, esto derivado a que los NIP compartidos xxxxxx.
 
 Se comparte evidencia:
 

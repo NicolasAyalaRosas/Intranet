@@ -1,0 +1,123 @@
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    background-image: url('../Imagenes_y_Archivos/FondodepantallaP2.png');
+}
+
+header{
+    margin-bottom:70px;
+}
+
+main{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    padding:40px 20px;
+}
+
+.container{
+    width:80%;
+    max-width:1000px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.upload-container{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+#archivoCSV{
+    display:none;
+}
+
+.btn-cargar{
+    display:inline-block;
+    background-color:var(--azul-oscuro);
+    color:white;
+    padding:14px 24px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.btn-cargar:hover{
+    background-color:var(--azul-hover);
+}
+
+#nombreArchivo{
+    margin-top:15px;
+    font-weight:bold;
+}
+
+.columnas-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+}
+
+.tarjeta-columna{
+    background:white;
+    border-radius:12px;
+    padding:20px;
+    cursor:pointer;
+    text-align:center;
+    box-shadow:var(--sombra-suave);
+    transition:.25s;
+}
+
+.tarjeta-columna:hover{
+    transform:translateY(-3px);
+    box-shadow:var(--sombra-hover);
+}
+
+.tarjeta-columna h3{
+    margin-bottom:10px;
+}
+
+.registros{
+    color:#666;
+    font-size:13px;
+}
+
+.visor-container{
+    margin-top:35px;
+}
+
+#contenidoColumna{
+    width:100%;
+    min-height:350px;
+    resize:vertical;
+    padding:15px;
+    border-radius:10px;
+    border:1px solid var(--gris-borde);
+    background:var(--gris-fondo);
+    font-family:Consolas, monospace;
+}
+
+.botones-container{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+
+.botones-container button{
+    flex:1;
+    background:var(--azul-oscuro);
+    color:white;
+}
+
+@media(max-width:600px){
+
+    .container{
+        width:95%;
+    }
+
+    .botones-container{
+        flex-direction:column;
+    }
+}

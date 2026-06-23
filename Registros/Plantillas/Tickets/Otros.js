@@ -63,4 +63,24 @@ Se aplica migración y asignación de oferta para los xxxxxx DN proporcionados.
 Se comparte evidencia.
 Favor de validar con los usuarios.`,
 
+
+
+
+    "Pre-desactivacion 2 o más Líneas": `Estimados,
+
+Conforme a lo solicitado se realiza Pre-desactivación de los xxxxxx DN proporcionados.
+
+Se comparte evidencia.
+Favor de validar con los usuarios.`,
+
+
+
+
+    "Pre-desactivacion 1 DN": `Estimados,
+
+Conforme a lo solicitado se realiza Pre-desactivación del Número xxxxxx.
+
+Se comparte evidencia.
+Favor de validar con los usuarios.`,
+
 };
