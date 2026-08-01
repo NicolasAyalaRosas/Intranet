@@ -22,7 +22,7 @@ Validaciones en teléfono:
 
 Posible causa:
 
-- Se realiza búsqueda de la operación en la plataforma Openpay-Conekta y se confirma que el cargo existe y figura como "Pagado".
+- Se realiza búsqueda de la operación en la plataforma Openpay-iPagos y se confirma que el cargo existe y figura como "Pagado".
 
 Solución:
 

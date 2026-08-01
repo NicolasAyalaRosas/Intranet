@@ -9,8 +9,7 @@ DN a Portar:
 ICCID:
 IMSI:
 PortID: 
-Offer ID_adquirido:
-Offer ID_promocion:`,
+`,
 
 
 
@@ -23,8 +22,6 @@ DN a Portar:
 ICCID:
 IMSI:
 PortID:
-Offer ID_adquirido:
-Offer ID_promocion:
  `,
 
 
@@ -38,8 +35,6 @@ DN a Portar:
 ICCID:
 IMSI:
 PortID: 
-Offer ID_adquirido:
-Offer ID_promocion:
 `,
 
 
